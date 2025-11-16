@@ -27,7 +27,6 @@ struct ContentView: View {
                 }
             
             Spacer()
-            
             //Barra de progreso
             VStack{
                 Slider(value: $progress, in: 0...100)
@@ -44,38 +43,11 @@ struct ContentView: View {
         
             //Botones de menú
             HStack{
-                Button {
-                    
-                } label: {
-                    Text("Música")
-                        .font(.title2)
-                        .foregroundStyle(.white)
-                        .frame(minWidth: 80)
-                }
-                .buttonStyle(.bordered)
-                .tint(.black)
+                MyMenuButton(text: "Música")
                 
-                Button {
-                    
-                } label: {
-                    Text("Explorar")
-                        .font(.title2)
-                        .foregroundStyle(.white)
-                        .frame(minWidth: 80)
-                }
-                .buttonStyle(.bordered)
-                .tint(.black)
+                MyMenuButton(text: "Explorar")
                 
-                Button {
-                    
-                } label: {
-                    Text("Listas")
-                        .font(.title2)
-                        .foregroundStyle(.white)
-                        .frame(minWidth: 80)
-                }
-                .buttonStyle(.bordered)
-                .tint(.black)
+                MyMenuButton(text: "Listas")
 
             }
             .padding()
@@ -83,59 +55,17 @@ struct ContentView: View {
             //Botones de control
             HStack{
                 Spacer()
-                Button {
-                    
-                } label: {
-                    Image(systemName: "backward.fill")
-                        .font(.title2)
-                        .foregroundStyle(.white)
-                        .padding()
-                        .background(
-                            LinearGradient(
-                                colors: [Color.black.opacity(0.80), Color.black.opacity(0.6)],
-                                startPoint: .bottom,
-                                endPoint: .top
-                            )
-                        )
-                        .clipShape(Circle())
-                }
+                MyControlButton(symbol: "backward.fill")
+                    .font(.title2)
                 
                 Spacer()
-                Button {
-                    
-                } label: {
-                    Image(systemName: "play.fill")
-                        .font(.largeTitle)
-                        .foregroundStyle(.white)
-                        .padding()
-                        .background(
-                            LinearGradient(
-                                colors: [Color.black.opacity(0.80), Color.black.opacity(0.3)],
-                                startPoint: .leading,
-                                endPoint: .top
-                            )
-                        )
-                        .clipShape(Circle())
-                        
-                        
-                }
+                MyControlButton(symbol: "play.fill")
+                    .font(.largeTitle)
+                
                 Spacer()
-                Button {
-                    
-                } label: {
-                    Image(systemName: "forward.fill")
-                        .font(.title2)
-                        .foregroundStyle(.white)
-                        .padding()
-                        .background(
-                            LinearGradient(
-                                colors: [Color.black.opacity(0.80), Color.black.opacity(0.3)],
-                                startPoint: .leading,
-                                endPoint: .top
-                            )
-                        )
-                        .clipShape(Circle())
-                }
+                MyControlButton(symbol: "forward.fill")
+                    .font(.title2)
+                
                 Spacer()
             }
             .padding()
@@ -152,37 +82,16 @@ struct ContentView: View {
             .padding()
             
             Spacer()
-            
             //Opciones varias
             HStack {
-                Button {
-                    
-                } label: {
-                    Image(systemName: "quote.bubble")
-                        .foregroundStyle(.gray)
-                        .font(.title)
-                }
-                
+                MyOptionButton(image: "quote.bubble")
+                    .foregroundStyle(.gray)
                 Spacer()
-                
-                Button {
-                    
-                } label: {
-                    Image(systemName: "airplay.audio")
-                        .foregroundStyle(.white)
-                        .font(.title)
-                }
-                
+                MyOptionButton(image: "airplay.audio")
+                    .foregroundStyle(.white)
                 Spacer()
-                
-                Button {
-                    
-                } label: {
-                    Image(systemName: "list.bullet")
-                        .foregroundStyle(.gray)
-                        .font(.title)
-                }
-
+                MyOptionButton(image: "list.bullet")
+                    .foregroundStyle(.gray)
             }
             .padding(.horizontal, 50)
             
