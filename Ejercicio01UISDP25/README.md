@@ -15,7 +15,7 @@ Incluye una imagen de fondo en la parte superior, un icono de música centrado s
 
 ## Capturas de pantalla
 
-_(Añadir más adelante)_
+<img src="ReproductorMusica.png" width="203">
 
 ## Tecnologías utilizadas
 

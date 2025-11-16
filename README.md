@@ -8,4 +8,6 @@ Este repositorio está compuesto por una serie de **proyectos Swift y SwiftUI** 
 
 1. [Reproductor de música](https://github.com/ManuelCBR/EjerciciosSDP26/tree/main/Ejercicio01UISDP25)
 
+<img src="Imagenes/ReproductorMusica.png" width="203">
+
 *(Se irán agregando más ejercicios).* 
