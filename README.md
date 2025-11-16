@@ -7,6 +7,7 @@ Este repositorio está compuesto por una serie de **proyectos Swift y SwiftUI** 
 ## 💻 Ejercicios
 
 1. [Reproductor de música](https://github.com/ManuelCBR/EjerciciosSDP26/tree/main/Ejercicio01UISDP25)
+2. [App del tiempo](https://github.com/ManuelCBR/EjerciciosSDP26/tree/main/Ejercicio02UISDP25)
 
 <img src="Imagenes/ReproductorMusica.png" width="203">
 

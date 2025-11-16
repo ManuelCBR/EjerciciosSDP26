@@ -3,12 +3,12 @@
 ## Descripción
 
 Esta interfaz recrea una pantalla de música con diseño adaptado a iOS 26 usando Swift 6 y SwiftUI.  
-Incluye una imagen de fondo en la parte superior, un icono de música centrado sobre el área de la dynamic island, una barra de reproducción y tres botones circulares con sus respectivas etiquetas.
+Incluye una imagen en la parte superior que corresponde a la portada, dicha portada a modo de background difuminado y con algo de opacidad, una barra de reproducción y tres botones circulares con sus respectivas etiquetas y botones de opciones varias al pie de la pantalla..
 
 ## Objetivos del ejercicio
 
 - Practicar el uso de imágenes como cabecera con `resizable()` y `scaledToFill()`.
-- Colocar contenido sobre zonas de notch usando `safeAreaInset` y capas (`ZStack`).
+- Colocar contenido sobre zonas de isla dinámica usando `safeAreaInset` y capas (`ZStack`).
 - Implementar una barra de reproducción con controles básicos.
 - Crear botones circulares con etiquetas inferiores.
 - Seguir patrones de diseño de iOS 26 (Liquid Glass, jerarquía visual clara, márgenes amplios).
